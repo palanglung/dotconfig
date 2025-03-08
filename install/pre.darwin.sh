@@ -22,3 +22,7 @@ if ! _is_cmd_installed stow; then
   _install GNU/Stow stow
   _configure stow
 fi
+
+if _is_cmd_installed gum; then
+  gum spin --spinner meter --title "Updating submodule" --show-output -- bash -c "git submodule update --init"
+fi

@@ -1,5 +1,1 @@
 [[ -f ~/.config/zsh/init.zsh ]] && . ~/.config/zsh/init.zsh
-
-alias sclang="/Applications/SuperCollider.app/Contents/MacOS/sclang"
-
-source ${HOME}/.ghcup/env
