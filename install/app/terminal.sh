@@ -1,17 +1,20 @@
 set -e
 
 _select_app() {
-  APP=$(gum choose "Alacritty" "WezTerm" --header "Install Terminal App:")
+  APP=$(gum choose "Alacritty" "WezTerm" "Ghostty" --header "Install Terminal App:")
   case "$APP" in
-    Alacritty)
-      install=alacritty
-      ;;
-    WezTerm)
-      install=wezterm
-      ;;
-    *)
-      gum confirm "Choose Terminal App?" && _select_app
-      ;;
+  Alacritty)
+    install=alacritty
+    ;;
+  WezTerm)
+    install=wezterm
+    ;;
+  Ghostty)
+    install=ghostty
+    ;;
+  *)
+    gum confirm "Choose Terminal App?" && _select_app
+    ;;
   esac
 }
 _select_app

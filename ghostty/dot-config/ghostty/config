@@ -1,0 +1,32 @@
+maximize=true
+font-family="MonaspiceNe Nerd Font Propo"
+font-size=12
+font-feature=+calt +liga +dlig
+theme=catppuccin-mocha
+command=/opt/homebrew/bin/tmux new-session -A -D -s terminal
+macos-titlebar-style=hidden
+window-width=1024
+window-height=768
+window-padding-x=8
+window-padding-y=6
+window-save-state = always
+window-colorspace=display-p3
+quick-terminal-position=top
+macos-icon=blueprint
+
+
+keybind = cmd+t=text:\x00c
+keybind = cmd+[=text:\x00p
+keybind = cmd+]=text:\x00n
+keybind = cmd+w=text:\x00x
+
+keybind = cmd+1=text:\x001
+keybind = cmd+2=text:\x002
+keybind = cmd+3=text:\x003
+keybind = cmd+4=text:\x004
+keybind = cmd+5=text:\x005
+keybind = cmd+6=text:\x006
+keybind = cmd+7=text:\x007
+keybind = cmd+8=text:\x008
+keybind = cmd+9=text:\x009
+
